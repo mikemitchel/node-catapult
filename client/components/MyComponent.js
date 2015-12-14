@@ -4,6 +4,9 @@ exports.controller = function (options) {}
 
 exports.view = function (ctrl, options) {
   return m('.my-component', [
-    m('h2', options.title)
+    m('h2', options.title),
+    m("input"),
+    m("button", "Schedule"),
+    m("table")
   ])
 }
