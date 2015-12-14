@@ -1,5 +1,5 @@
 var m = require('mithril')
-var MyComponent = require('./components/MyComponent')
+var EnterPlant = require('./components/EnterPlant')
 
 //
 // Global variable for global state (e.g. currentUser)
@@ -19,7 +19,7 @@ m.route(document.getElementById('app'), '/', {
     view: function (ctrl) {
       return m('.app', [
         m('h1', 'Waterify'),
-        m.component(MyComponent, { title: 'Stay moist, Stay Green' })
+        m.component(EnterPlant, { title: 'Stay moist, Stay Green' })
       ])
     }
   }
