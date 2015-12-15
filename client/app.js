@@ -5,7 +5,7 @@ var EnterPlant = require('./components/EnterPlant')
 // Global variable for global state (e.g. currentUser)
 //
 window.App = {
-  plants: []
+  list: []
 }
 
 
