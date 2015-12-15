@@ -17,6 +17,14 @@ routes.get('/api/tags-example', function(req, res) {
   res.send(['node', 'express', 'browserify', 'mithril'])
 })
 
+routes.get('/api/plant', function(req, res) {
+  res.send({ plant: {plantId: 1, plantName: 'Fred', plantDays: 3}} )
+})
+
+routes.post('/api/plant', function(req, res) {
+  // save a new plant here
+})
+
 //
 // Static assets (html, etc.)
 //

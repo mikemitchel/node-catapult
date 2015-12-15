@@ -4,7 +4,10 @@ var EnterPlant = require('./components/EnterPlant')
 //
 // Global variable for global state (e.g. currentUser)
 //
-window.App = {}
+window.App = {
+  plants: []
+}
+
 
 //
 // Client-side routing
@@ -18,8 +21,8 @@ m.route(document.getElementById('app'), '/', {
 
     view: function (ctrl) {
       return m('.app', [
-        m('h1', 'Waterify'),
-        m.component(EnterPlant, { title: 'Stay moist, Stay Green' })
+        m('h1', 'Rain Dance'),
+        m.component(EnterPlant, { title: 'Stay Green' })
       ])
     }
   }
